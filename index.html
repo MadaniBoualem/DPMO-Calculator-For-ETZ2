@@ -14,30 +14,58 @@
         <link rel="preload" href="assets/js/script.js" as="script">
         <link rel="stylesheet" href="assets/css/style.css">
         <script src="assets/js/script.js" defer></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     </head>
     
     <body>
         <main>
             <section class="form-container">
-                <form>
-                    <div class="form-group">
-                        <label for="number1">Nombre d'erreur:</label>
-                        <input type="text" class="form-control" id="number1">
-                    </div>
-                    <div class="form-group">
-                        <label for="number2">Nombre de transactions total:</label>
-                        <input type="text" class="form-control" id="number2">
-                    </div>
-                    <div class="form-group">
-                        <label>Résultat:</label>
-                        <br/>
-                        <span id="result"></span>
-                    </div>
-                    <button type="button" class="btn btn-primary" onclick="calculate()">Calculer</button>
-                </form>         
+
+                <section class="error">
+
+                    <form>
+                           <h3>Nombre d'erreurs:</h3>
+                            <input type="text" class="form-control" id="error1">
+                            <input type="text" class="form-control" id="error2">
+                            <input type="text" class="form-control" id="error3">
+                            <input type="text" class="form-control" id="error4">
+                            <input type="text" class="form-control" id="error5">
+                            <input type="text" class="form-control" id="error6">
+                            <input type="text" class="form-control" id="error7">
+
+                </section>
+                
+                <section class="operation">
+
+                        <h3>Nombre de transactions:</h3>
+                        <input type="text" class="form-control" id="operation1">
+                        <input type="text" class="form-control" id="operation2">
+                        <input type="text" class="form-control" id="operation3">
+                        <input type="text" class="form-control" id="operation4">
+                        <input type="text" class="form-control" id="operation5">
+                        <input type="text" class="form-control" id="operation6">
+                        <input type="text" class="form-control" id="operation7">
+
+                </section>
             </section>   
+
+
+                <section class="result">
+                    <h3>Résultat:</h3>
+                    <span id="final-result"></span>
+                <div class="button-container">
+
+
+                    <button type="button" class="form-button" onclick="calculate()">
+                        <span class ="calculate">Calculer </span> 
+                    </button>
+                    
+                    <button type="button" class="form-button" id="copy-button" onclick="copyResult()">
+                            <span class="calculate"><i class="fa fa-clipboard"></i> </span>
+                    </button>
+                </div>  
+                </section> 
+                </form>         
         </main>
     </body>
 </html>
