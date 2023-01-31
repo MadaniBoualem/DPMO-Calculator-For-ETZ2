@@ -8,6 +8,8 @@
         outline: none;
       }
 
+    h1,
+    h2,
     h3,
     span{
         color: white;
@@ -26,21 +28,32 @@
     .form-container {
         display: flex;
         align-items: center;
+        justify-content: space-evenly;
         gap: 1vh;
         position: relative;
         background-color: #3e3f4b;
         padding: 2vh;
         border-radius: 10px;
+        width: 70vh;
+        flex-wrap: wrap;
         }
+
+    .form-container h2{
+        flex-basis: 70%;
+        justify-self: center; 
+    }
+
+    .error,
+    .operation{
+        flex-basis: 30%;
+    }
 
     form{
         flex-direction: column;
         justify-content: center;
     }
 
-    .error{
-        flex-basis: 70%;
-    }
+
     
     .result {
         margin-top: auto;
@@ -144,3 +157,10 @@
     .button-container{
         display: flex;
     }
+
+    .title-container{
+        display: flex;
+        justify-content: center;
+    }
+
+

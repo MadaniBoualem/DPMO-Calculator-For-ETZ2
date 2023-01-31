@@ -6,7 +6,7 @@
 
         <meta charset="utf-8">
 
-        <title>DPMO calculator</title>
+        <title>End Shift Calculator</title>
 
         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -19,12 +19,19 @@
     
     <body>
         <main>
-            <section class="form-container">
+
+            <h1 class="title-container">DPMO calculator</h1>
+            <span class="title-container">Made by mboualek</span>
+
+
+            <div class="form-container">
+
+                <h2>End Shift Calculator</h2>
 
                 <section class="error">
 
                     <form>
-                           <h3>Nombre d'erreurs:</h3>
+                           <h3>Nombre </br> d'erreurs :</h3>
                             <input type="text" class="form-control" id="error1">
                             <input type="text" class="form-control" id="error2">
                             <input type="text" class="form-control" id="error3">
@@ -37,7 +44,7 @@
                 
                 <section class="operation">
 
-                        <h3>Nombre de transactions:</h3>
+                        <h3>Nombre </br> de transactions :</h3>
                         <input type="text" class="form-control" id="operation1">
                         <input type="text" class="form-control" id="operation2">
                         <input type="text" class="form-control" id="operation3">
@@ -49,22 +56,29 @@
                 </section>
             </section>   
 
-
                 <section class="result">
                     <h3>Résultat:</h3>
                     <span id="final-result"></span>
-                <div class="button-container">
+                    <div class="button-container">
 
 
-                    <button type="button" class="form-button" onclick="calculate()">
-                        <span class ="calculate">Calculer </span> 
-                    </button>
+                        <button type="button" class="form-button" onclick="calculate()">
+                            <span class ="calculate">Calculer </span> 
+                        </button>
+
+                        <button type="button" class="form-button" onclick="resetForm()">
+                            <span class="calculate">Reinitialiser</span>
+                        </button>
                     
-                    <button type="button" class="form-button" id="copy-button" onclick="copyResult()">
+                        <button type="button" class="form-button" id="copy-button" onclick="copyResult()">
                             <span class="calculate"><i class="fa fa-clipboard"></i> </span>
-                    </button>
-                </div>  
-                </section> 
+                        </button>
+
+                        
+
+                    </div>  
+                </div>
+
                 </form>         
         </main>
     </body>

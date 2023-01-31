@@ -29,3 +29,11 @@ function calculate() {
     document.body.removeChild(tempInput);
     alert("Copied: " + result.innerText);
   };
+
+  function resetForm() {
+    document.querySelectorAll("input[type=text]").forEach(input => {
+        input.value = "";
+    });
+    document.querySelector("#final-result").textContent = "";
+}
+
